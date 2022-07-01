@@ -1,0 +1,97 @@
+#content-body {
+    margin-top: 20px;
+}
+
+#content-body .column {
+    float: left;
+    width: 48%;
+    min-height: 400px;
+    padding: 0px;
+    background-color: #ffffff;
+    position: relative;
+    margin: 10px;
+}
+
+#content-body .no-item-message {
+    color: #ff0000;
+    width: 100%;
+    text-align: center;
+}
+
+#content-body .button {
+    bottom: 20px;
+    border: thick double #000000;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+}
+
+#content-body .add-button {
+    position: absolute;
+    background-color: #ff9900;
+    border-radius: 100%;
+}
+
+#content-body .delete-button {
+    background-color: #fc6565;
+    border-radius: 5px;
+}
+
+#content-body .finish-button {
+    background-color: #ffa603;
+    border-radius: 5px;
+}
+
+#content-body button:hover {
+    cursor: pointer;
+    background-color: #ffa603;
+}
+
+#content-body .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: #82838a;
+}
+
+#content-body .left-col tr:hover {
+    cursor: pointer;
+    background-color: #cef1ef;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+  background-color: #ffa603;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 700px) {
+    #content-body .column  {
+        width: 100%;
+    }
+    #content-body .left-col {
+        margin-right: 0;
+    }
+    #content-body { 
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #content-body .column  {
+        width: 100%;
+    }
+}
